@@ -8,9 +8,7 @@ const User = require("../Models/User");
 
 router.post("/users", (req, res, next) => {
   const { email, name } = req.body;
-
   const user = new User(name, email);
-
   res.json(user);
 });
 
